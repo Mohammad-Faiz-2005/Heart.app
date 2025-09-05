@@ -13,7 +13,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 st.header("Heart Disease Prediction Model")
 
-dataset = pd.read_csv(r"C:\Users\Mohammad Faiz\Downloads\framingham.csv")
+dataset = pd.read_csv(r"Heart ml 2nd Proj/framingham.csv")
 df = pd.DataFrame(dataset)
 
 #df
@@ -73,3 +73,4 @@ if st.button("Give Prediction"):
         st.header("Prediction is : You Are Safe With No Heart Disease. ")
     else:
         st.header("Prediction is : You Have A Heart Disease. Please consult a doctor for further evaluation.")
+
