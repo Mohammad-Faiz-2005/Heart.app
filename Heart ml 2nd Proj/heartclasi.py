@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier 
 from sklearn.ensemble import VotingClassifier
@@ -73,5 +72,6 @@ if st.button("Give Prediction"):
         st.header("Prediction is : You Are Safe With No Heart Disease. ")
     else:
         st.header("Prediction is : You Have A Heart Disease. Please consult a doctor for further evaluation.")
+
 
 
