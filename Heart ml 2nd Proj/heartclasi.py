@@ -60,15 +60,14 @@ Age = st.number_input("Enter the Age: ")
 if Age <0 or Age > 120 :
     st.warning("Invalid Input !!")
 
-Smoker = 0    
+Smoker = 0 
+cigsPerDay = 0
 Smok = st.radio("Are you a Smoker:",["YES","NO"])
 if(Smok == "YES"):
     Smoker = 1
     cigsPerDay = st.number_input("Enter how many cigarettes you consume daily: ")
     if cigsPerDay < 0:
         st.error("Invalid Input")
-elif Smok=="No":
-    cigsPerDay = 0
 
 BP = st.number_input("Enter BP MEDS: ")
 PreSt = st.radio("Are you with prevalentStroke?",["YES","No"])
@@ -108,5 +107,6 @@ if st.button("Give Prediction"):
         st.header("Prediction is : You Are Safe With No Heart Disease. ")
     else:
         st.header("Prediction is : You Have A Heart Disease. Please consult a doctor for further evaluation.")
+
 
 
